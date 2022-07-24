@@ -134,7 +134,6 @@
   ansible.builtin.assert:
     that:
       - item.size is defined
-      - item.size is number
     quiet: yes
   loop: "{{ storage_volumes }}"
   loop_control:
